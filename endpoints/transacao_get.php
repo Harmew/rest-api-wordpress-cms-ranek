@@ -34,7 +34,7 @@ function api_transacao_get($request) {
             $post_meta = get_post_meta($post_id);
 
             $response[] = array(
-                'compador_id' => $post_meta['comprador_id'][0],
+                'comprador_id' => $post_meta['comprador_id'][0],
                 'vendedor_id' => $post_meta['vendedor_id'][0],
                 'endereco' => json_decode($post_meta['endereco'][0]),
                 'produto' => json_decode($post_meta['produto'][0]),
